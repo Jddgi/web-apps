@@ -1,38 +1,41 @@
-# 1. Configuración del Entorno de Desarrollo (1.1)
-Entorno Local vs. Producción:
-Entorno Local: Se ejecuta en la máquina propia del desarrollador, permitiendo trabajar en la aplicación sin requerir necesariamente conexión a Internet. Dependiendo del sistema operativo (Windows, Linux, macOS), la configuración requiere:
-Servidor Web: Apache, Nginx.
-Gestor de Bases de Datos: MySQL, MariaDB, PostgreSQL, MongoDB, etc.
-Intérprete de Lenguaje: Python, Java, PHP, Ruby, etc.
-Editor o IDE: Visual Studio Code, Atom, Sublime Text.
-Gestor de Paquetes y Herramientas: Frameworks, herramientas de control de cambios.
-Entorno de Producción: Servidor físico o en la nube accesible por Internet o Intranet donde los usuarios finales consumen la aplicación terminada.
-Stacks Preconfigurados por Sistema Operativo:
-Windows: WAMP / XAMPP.
-Mac: MAMP.
-Linux: LAMP.
-(Nota: Las siglas responden al SO + Apache + MySQL + PHP/Perl).
-Herramientas de Soporte Recomendadas:
-XAMPP: Servidor web con Apache, MariaDB, PHP, Perl y phpMyAdmin.
-Composer: Gestor de dependencias para PHP (utilizado para instalar Laravel).
-npm: Gestor de dependencias para Node.js (entorno de ejecución para JavaScript).
-Terminales avanzadas: Cmder o Windows Terminal (en lugar de la consola estándar CMD).
-Editor de Código: Visual Studio Code.
-2. Software de Control de Versiones (1.2)
-¿Qué es un VCS?: Es una herramienta que monitorea y gestiona los cambios realizados en los archivos de un proyecto, facilitando la colaboración entre desarrolladores.
-Ventajas Principales:
-Historial de cambios: Mantiene el registro de modificaciones a largo plazo.
-Ramificación (Branching) y Fusión (Merging): Permite crear flujos de trabajo independientes para cada desarrollador o funcionalidad sin alterar la línea principal.
-Trazabilidad: Conecta cambios de código con tareas o reportes de errores.
-Git vs. GitHub:
-Git: Software de control de versiones distribuido que opera de manera local.
-GitHub: Plataforma en la nube para alojar y compartir repositorios remotos (existen alternativas como GitLab o Bitbucket).
-3. Framework Laravel (1.3)
-¿Qué es un Framework?: Conjunto estandarizado de herramientas, conceptos y prácticas que agiliza el desarrollo de software evitando escribir código repetitivo y garantizando coherencia.
-Frameworks Populares por Lenguaje:
-PHP: Laravel, CodeIgniter, Symfony.
-Python: Django.
-TypeScript/JS: Angular.
-Ruby: Rails.
-C#: .NET.
-Por qué elegir Laravel: Destaca por su solidez, curva de aprendizaje accesible, amplia comunidad, soporte constante y un ecosistema maduro con recursos como Laracasts o la documentación oficial.
+Entornos y Servidores
+Diferencia entre Local y Prod Environment:
+Local: Entorno de pruebas ejecutado en la máquina del desarrollador que permite probar código sin afectar a usuarios finales ni requerir siempre conexión a Internet.
+Prod (Producción): Servidor final (físico o en la nube) donde la aplicación está desplegable y disponible de forma continua para los usuarios finales.
+Definición de Web Server y Ejemplos:
+Definición: Software que procesa las peticiones de los usuarios mediante el protocolo HTTP/HTTPS y entrega los contenidos web (páginas, imágenes, datos).
+Ejemplos: Apache, Nginx.
+Definición de Database Manager y Ejemplos:
+Definición: Sistema gestor de bases de datos (SGBD) encargado de almacenar, estructurar, consultar y administrar la información de la aplicación de forma persistente.
+Ejemplos: MySQL, MariaDB, PostgreSQL, MongoDB, Redis.
+Definición de Runtime o Interpreter y Ejemplos:
+Definición: Entorno o motor encargado de procesar, interpretar y ejecutar el código fuente escrito en un lenguaje de programación para que la computadora lo traduzca a instrucciones operativas.
+Ejemplos: Intérprete de PHP, Python, Java, Node.js (runtime para JavaScript).
+Definición de IDE y Ejemplos:
+Definición: Entorno de Desarrollo Integrado (Integrated Development Environment); programa que combina editor de texto, herramientas de depuración y automatización para facilitar el desarrollo de software.
+Ejemplos: Visual Studio Code, PhpStorm, Xcode, Eclipse.
+Herramientas de Software y Dependencias
+Definición de Framework y Ejemplos:
+Definición: Estructura de trabajo estandarizada que proporciona un conjunto de herramientas, módulos y buenas prácticas para acelerar el desarrollo evitando escribir código repetitivo.
+Ejemplos: Laravel (PHP), Django (Python), Angular (TypeScript), .NET (C#).
+Definición de Librería y Ejemplos:
+Definición: Conjunto de funciones o código predefinido que se importa en un programa para resolver tareas específicas sin imponer la arquitectura global de la aplicación.
+Ejemplos: React, jQuery, Lodash, Guzzle.
+Definición de Package Management System y Ejemplos:
+Definición: Herramienta automatizada que permite instalar, actualizar, configurar y eliminar librerías o dependencias necesarias para que un proyecto funcione correctamente.
+Ejemplos: Composer (PHP), npm (Node.js), pip (Python).
+Control de Versiones y Trabajo Colaborativo
+Qué es Git y Comandos más Importantes:
+Definición: Sistema de control de versiones distribuido que rastrea los cambios en los archivos de un proyecto localmente.
+Comandos Clave:
+git init: Inicializa un repositorio local.
+git status: Muestra el estado actual del repositorio y archivos modificados.
+git add <archivo> / git add .: Añade archivos al área de preparación (staging).
+git commit -m "mensaje": Guarda una versión/captura de los cambios en el historial.
+git push: Sube las versiones locales al repositorio remoto.
+git pull: Descarga e integra los cambios desde el repositorio remoto.
+git branch / git checkout -b <nombre>: Gestiona y crea ramas de trabajo.
+Qué es GitHub y Definición de Pull Request y Merge:
+GitHub: Plataforma basada en la nube que permite alojar repositorios de Git y ofrece herramientas colaborativas para equipos de software.
+Pull Request (PR): Petición enviada dentro de GitHub para solicitar que las modificaciones hechas en una rama se revisen antes de integrarse a la rama principal.
+Merge: Acción de fusionar o integrar definitivamente los cambios de una rama secundaria dentro de la rama base del proyecto.
