@@ -1,6 +1,6 @@
 # 1. Configuración del Entorno de Desarrollo (1.1)
-# Entorno Local vs. Producción:
-# Entorno Local: Se ejecuta en la máquina propia del desarrollador, permitiendo trabajar en la aplicación sin requerir necesariamente conexión a Internet. Dependiendo del sistema operativo (Windows, Linux, macOS), la configuración requiere:
+Entorno Local vs. Producción:
+Entorno Local: Se ejecuta en la máquina propia del desarrollador, permitiendo trabajar en la aplicación sin requerir necesariamente conexión a Internet. Dependiendo del sistema operativo (Windows, Linux, macOS), la configuración requiere:
 Servidor Web: Apache, Nginx.
 Gestor de Bases de Datos: MySQL, MariaDB, PostgreSQL, MongoDB, etc.
 Intérprete de Lenguaje: Python, Java, PHP, Ruby, etc.
