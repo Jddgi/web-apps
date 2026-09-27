@@ -1,0 +1,91 @@
+//Miss, aquí le coloco lo de la parte 2
+
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Owner extends Model
+{
+    /**
+     * Función estática para retornar el nombre del propietario.
+     */
+    public static function getOwnerName()
+    {
+        return "Juan de Dios Guzmán Isaías";
+    }
+}
+
+
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Owner; // Importación del modelo Owner
+
+class OrderController extends Controller
+{
+    /**
+     * Retorna la vista Owner pasando el nombre del propietario.
+     */
+    public function getOwner()
+    {
+        return view('Owner', ["message" => Owner::getOwnerName()]);
+    }
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Controller | owner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+        }
+        h1 {
+            color: #1a202c;
+            font-size: 2.8rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ $message }}</h1>
+</body>
+</html>
+
+
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+*/
+
+// Ruta creada para la Parte 2
+Route::get('/owner', 'OrderController@getOwner');
+
+
+php artisan make:controller OrderController
+php artisan make:model Owner
+
+php artisan serve
+
+
+git add .
+git commit -m "act 6 part 2"
+git push
