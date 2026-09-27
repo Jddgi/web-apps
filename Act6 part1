@@ -1,0 +1,71 @@
+//Maestra, aquí le pongo todo el codigo que use para la parte 1
+
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laravel - Act 6 Part 1</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f7fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        /* Estilo personalizado solicitado en el punto 4 */
+        .owner-name {
+            color: #1d4ed8; /* Color personalizado (azul) */
+            font-weight: bold; /* Texto en negrita */
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Laravel Project</h1>
+        
+        <!-- Div con tu nombre según la instrucción 4 de la Parte 1 -->
+        <div class="owner-name">
+            Juan de Dios Guzmán Isaías
+        </div>
+    </div>
+</body>
+</html>
+
+
+php artisan tinker
+
+print "Helllo my name is Juan de Dios Guzmán Isaías and this is my fist Laravel project";
+
+php artisan key:generate
+php artisan serve
+
+git add .
+git commit -m "act 6 part 1"
+git push
