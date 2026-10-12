@@ -39,5 +39,3 @@ Qué es GitHub y Definición de Pull Request y Merge:
 GitHub: Plataforma basada en la nube que permite alojar repositorios de Git y ofrece herramientas colaborativas para equipos de software.
 Pull Request (PR): Petición enviada dentro de GitHub para solicitar que las modificaciones hechas en una rama se revisen antes de integrarse a la rama principal.
 Merge: Acción de fusionar o integrar definitivamente los cambios de una rama secundaria dentro de la rama base del proyecto.
-
-Hola prueba
